@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgRM" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#1e2230"/>
+      <stop offset="60%" stop-color="#0c0e16"/>
+      <stop offset="100%" stop-color="#05060a"/>
+    </radialGradient>
+    <linearGradient id="goldRM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f6d365"/>
+      <stop offset="100%" stop-color="#fda085"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgRM)"/>
+  <circle cx="120" cy="90" r="140" fill="#ffffff" opacity="0.08" filter="blur(40px)"/>
+  <circle cx="480" cy="90" r="140" fill="#f6d365" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- JERSEY REAL MADRID 24/25 -->
+  <g filter="url(#shadow)" transform="translate(100, 70)">
+    <!-- Base White Jersey -->
+    <path id="jBodyRM" d="M120,40 L60,110 L10,85 L45,210 L105,175 L105,430 L295,430 L295,175 L355,210 L390,85 L340,110 L280,40 C250,65 150,65 120,40 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="2"/>
+
+    <clipPath id="clipRM">
+      <use href="#jBodyRM"/>
+    </clipPath>
+
+    <g clip-path="url(#clipRM)">
+      <!-- Subtle Texture Grid -->
+      <line x1="105" y1="175" x2="105" y2="430" stroke="#f1f5f9" stroke-width="2"/>
+      <line x1="295" y1="175" x2="295" y2="430" stroke="#f1f5f9" stroke-width="2"/>
+
+      <!-- Black 3-Stripes on Shoulders -->
+      <line x1="85" y1="58" x2="40" y2="92" stroke="#0f172a" stroke-width="4.5"/>
+      <line x1="95" y1="52" x2="48" y2="88" stroke="#0f172a" stroke-width="4.5"/>
+      <line x1="105" y1="46" x2="56" y2="84" stroke="#0f172a" stroke-width="4.5"/>
+
+      <line x1="315" y1="58" x2="360" y2="92" stroke="#0f172a" stroke-width="4.5"/>
+      <line x1="305" y1="52" x2="352" y2="88" stroke="#0f172a" stroke-width="4.5"/>
+      <line x1="295" y1="46" x2="344" y2="84" stroke="#0f172a" stroke-width="4.5"/>
+
+      <!-- Sleeve Cuffs with Black Trim -->
+      <path d="M10,85 L45,210 L35,215 L0,90 Z" fill="#0f172a"/>
+      <path d="M390,85 L355,210 L365,215 L400,90 Z" fill="#0f172a"/>
+    </g>
+
+    <!-- Clean Round Collar with Black Rim -->
+    <path d="M135,42 C160,78 240,78 265,42 C240,66 160,66 135,42 Z" fill="#ffffff" stroke="#0f172a" stroke-width="3"/>
+
+    <!-- REAL MADRID CREST (Left Chest) -->
+    <g transform="translate(142, 115) scale(0.75)">
+      <!-- Crown -->
+      <path d="M5,10 L10,2 L20,7 L30,2 L35,10 Z" fill="#f59e0b" stroke="#b45309" stroke-width="1.5"/>
+      <circle cx="20" cy="5" r="2" fill="#ef4444"/>
+      <!-- Shield Circle -->
+      <circle cx="20" cy="30" r="18" fill="#ffffff" stroke="#f59e0b" stroke-width="2.5"/>
+      <circle cx="20" cy="30" r="14" fill="#0284c7" opacity="0.15"/>
+      <!-- Diagonal Purple Sash -->
+      <line x1="7" y1="18" x2="33" y2="42" stroke="#7c3aed" stroke-width="4"/>
+      <!-- Monogram MCF -->
+      <text x="20" y="35" font-family="'Montserrat', sans-serif" font-size="11" font-weight="900" fill="#f59e0b" text-anchor="middle">MCF</text>
+    </g>
+
+    <!-- BRAND LOGO (Right Chest) -->
+    <g transform="translate(242, 126) scale(0.8)">
+      <polygon points="0,15 5,0 12,0 7,15" fill="#0f172a"/>
+      <polygon points="10,15 15,4 22,4 17,15" fill="#0f172a"/>
+      <polygon points="20,15 25,8 32,8 27,15" fill="#0f172a"/>
+    </g>
+
+    <!-- SPONSOR FLY EMIRATES -->
+    <g transform="translate(200, 195)">
+      <text x="0" y="0" font-family="'Montserrat', sans-serif" font-size="15" font-weight="800" fill="#0f172a" text-anchor="middle" letter-spacing="3">Emirates</text>
+      <text x="0" y="14" font-family="'Montserrat', sans-serif" font-size="8" font-weight="700" fill="#0f172a" text-anchor="middle" letter-spacing="2">FLY BETTER</text>
+    </g>
+
+    <!-- NUMBER 10 (Front Center in Real Madrid Black 24/25 Font) -->
+    <text x="200" y="295" font-family="'Oswald', sans-serif" font-size="85" font-weight="700" fill="#0f172a" text-anchor="middle">10</text>
+    <text x="200" y="340" font-family="'Oswald', sans-serif" font-size="20" font-weight="700" fill="#0f172a" text-anchor="middle" letter-spacing="6">MODRIĆ</text>
+  </g>
+
+  <!-- Tag Badge -->
+  <g transform="translate(300, 535)">
+    <rect x="-185" y="-18" width="370" height="36" rx="18" fill="#0f172a" stroke="#f59e0b" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle" letter-spacing="1">REAL MADRID 2024/25 • MODRIĆ 10</text>
+  </g>
+</svg>
+

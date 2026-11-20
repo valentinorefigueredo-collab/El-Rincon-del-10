@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgBoca" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#14213d"/>
+      <stop offset="60%" stop-color="#0a1224"/>
+      <stop offset="100%" stop-color="#040812"/>
+    </radialGradient>
+    <linearGradient id="bocaBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#002d72"/>
+      <stop offset="100%" stop-color="#001844"/>
+    </linearGradient>
+    <linearGradient id="bocaGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed136"/>
+      <stop offset="100%" stop-color="#e59800"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgBoca)"/>
+  <circle cx="120" cy="90" r="140" fill="#002d72" opacity="0.2" filter="blur(40px)"/>
+  <circle cx="480" cy="90" r="140" fill="#fed136" opacity="0.12" filter="blur(40px)"/>
+
+  <!-- JERSEY BOCA 1981 -->
+  <g filter="url(#shadow)" transform="translate(100, 70)">
+    <!-- Base Shape -->
+    <path id="jBodyBoca" d="M120,40 L60,110 L10,85 L45,210 L105,175 L105,430 L295,430 L295,175 L355,210 L390,85 L340,110 L280,40 C250,65 150,65 120,40 Z" fill="url(#bocaBlue)" stroke="#000000" stroke-width="2"/>
+
+    <clipPath id="clipBoca">
+      <use href="#jBodyBoca"/>
+    </clipPath>
+
+    <g clip-path="url(#clipBoca)">
+      <!-- Iconic Wide Gold Horizontal Band -->
+      <rect x="0" y="195" width="400" height="115" fill="url(#bocaGold)"/>
+
+      <!-- Sleeve Cuffs Yellow Rib -->
+      <path d="M10,85 L45,210 L30,215 L-5,90 Z" fill="url(#bocaGold)"/>
+      <path d="M390,85 L355,210 L370,215 L405,90 Z" fill="url(#bocaGold)"/>
+
+      <!-- 3 White Stripes on shoulders (vintage 1981) -->
+      <line x1="85" y1="58" x2="40" y2="92" stroke="#ffffff" stroke-width="4"/>
+      <line x1="95" y1="52" x2="48" y2="88" stroke="#ffffff" stroke-width="4"/>
+      <line x1="105" y1="46" x2="56" y2="84" stroke="#ffffff" stroke-width="4"/>
+
+      <line x1="315" y1="58" x2="360" y2="92" stroke="#ffffff" stroke-width="4"/>
+      <line x1="305" y1="52" x2="352" y2="88" stroke="#ffffff" stroke-width="4"/>
+      <line x1="295" y1="46" x2="344" y2="84" stroke="#ffffff" stroke-width="4"/>
+    </g>
+
+    <!-- Retro V-Neck Collar Yellow -->
+    <path d="M135,42 C160,78 240,78 265,42 C240,65 160,65 135,42 Z" fill="url(#bocaGold)" stroke="#001844" stroke-width="2"/>
+    <polygon points="185,55 200,90 215,55" fill="url(#bocaGold)"/>
+
+    <!-- THE 4 STARS "C - A - B - J" ON LEFT CHEST -->
+    <g transform="translate(132, 115)">
+      <!-- Star C -->
+      <polygon points="12,0 15,9 24,9 17,14 20,23 12,17 4,23 7,14 0,9 9,9" fill="url(#bocaGold)"/>
+      <text x="12" y="14" font-family="'Montserrat', sans-serif" font-size="7" font-weight="900" fill="#001844" text-anchor="middle">C</text>
+      <!-- Star A -->
+      <polygon points="36,0 39,9 48,9 41,14 44,23 36,17 28,23 31,14 24,9 33,9" fill="url(#bocaGold)"/>
+      <text x="36" y="14" font-family="'Montserrat', sans-serif" font-size="7" font-weight="900" fill="#001844" text-anchor="middle">A</text>
+      <!-- Star B -->
+      <polygon points="12,25 15,34 24,34 17,39 20,48 12,42 4,48 7,39 0,34 9,34" fill="url(#bocaGold)"/>
+      <text x="12" y="39" font-family="'Montserrat', sans-serif" font-size="7" font-weight="900" fill="#001844" text-anchor="middle">B</text>
+      <!-- Star J -->
+      <polygon points="36,25 39,34 48,34 41,39 44,48 36,42 28,48 31,39 24,34 33,34" fill="url(#bocaGold)"/>
+      <text x="36" y="39" font-family="'Montserrat', sans-serif" font-size="7" font-weight="900" fill="#001844" text-anchor="middle">J</text>
+    </g>
+
+    <!-- NUMBER 10 (Centered on the Golden Band) -->
+    <text x="200" y="285" font-family="'Impact', 'Oswald', sans-serif" font-size="88" font-weight="700" fill="#001a4d" text-anchor="middle">10</text>
+    <text x="200" y="375" font-family="'Oswald', sans-serif" font-size="20" font-weight="700" fill="url(#bocaGold)" text-anchor="middle" letter-spacing="6">MARADONA</text>
+  </g>
+
+  <!-- Tag Badge -->
+  <g transform="translate(300, 535)">
+    <rect x="-185" y="-18" width="370" height="36" rx="18" fill="#0f172a" stroke="url(#bocaGold)" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#fed136" text-anchor="middle" letter-spacing="1">BOCA JUNIORS 1981 • MARADONA 10</text>
+  </g>
+</svg>
+

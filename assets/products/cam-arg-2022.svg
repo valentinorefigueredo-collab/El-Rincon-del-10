@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="50%" stop-color="#0e172a"/>
+      <stop offset="100%" stop-color="#060913"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259"/>
+      <stop offset="100%" stop-color="#ffa751"/>
+    </linearGradient>
+    <linearGradient id="celesteGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#80b8ee"/>
+      <stop offset="100%" stop-color="#5b9bd5"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="600" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Stadium Lights -->
+  <circle cx="100" cy="80" r="140" fill="#75aadb" opacity="0.12" filter="blur(40px)"/>
+  <circle cx="500" cy="80" r="140" fill="#ffe259" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- JERSEY GROUP -->
+  <g filter="url(#shadow)" transform="translate(100, 70)">
+    <!-- Base Jersey Body Silhouette -->
+    <path d="M120,40 L60,110 L10,85 L45,210 L105,175 L105,430 L295,430 L295,175 L355,210 L390,85 L340,110 L280,40 C250,65 150,65 120,40 Z" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+
+    <!-- Stripes Clip Path -->
+    <clipPath id="jerseyClip">
+      <path d="M120,40 L60,110 L10,85 L45,210 L105,175 L105,430 L295,430 L295,175 L355,210 L390,85 L340,110 L280,40 C250,65 150,65 120,40 Z"/>
+    </clipPath>
+
+    <!-- Vertical Sky Blue Stripes -->
+    <g clip-path="url(#jerseyClip)">
+      <!-- Left Sleeve Stripe -->
+      <path d="M15,90 L60,120 L40,195 L5,160 Z" fill="url(#celesteGrad)"/>
+      <!-- Right Sleeve Stripe -->
+      <path d="M385,90 L340,120 L360,195 L395,160 Z" fill="url(#celesteGrad)"/>
+
+      <!-- Body Vertical Stripes -->
+      <rect x="130" y="40" width="38" height="400" fill="url(#celesteGrad)"/>
+      <rect x="232" y="40" width="38" height="400" fill="url(#celesteGrad)"/>
+      <rect x="105" y="40" width="10" height="400" fill="url(#celesteGrad)"/>
+      <rect x="285" y="40" width="10" height="400" fill="url(#celesteGrad)"/>
+
+      <!-- Black Shoulder 3-Stripes Left -->
+      <line x1="85" y1="58" x2="40" y2="92" stroke="#111827" stroke-width="4"/>
+      <line x1="95" y1="52" x2="48" y2="88" stroke="#111827" stroke-width="4"/>
+      <line x1="105" y1="46" x2="56" y2="84" stroke="#111827" stroke-width="4"/>
+
+      <!-- Black Shoulder 3-Stripes Right -->
+      <line x1="315" y1="58" x2="360" y2="92" stroke="#111827" stroke-width="4"/>
+      <line x1="305" y1="52" x2="352" y2="88" stroke="#111827" stroke-width="4"/>
+      <line x1="295" y1="46" x2="344" y2="84" stroke="#111827" stroke-width="4"/>
+
+      <!-- Sleeve Black & Gold Ribbed Cuffs -->
+      <path d="M10,85 L45,210 L30,215 L-5,90 Z" fill="#0f172a"/>
+      <line x1="43" y1="205" x2="12" y2="90" stroke="url(#goldGrad)" stroke-width="3"/>
+      <path d="M390,85 L355,210 L370,215 L405,90 Z" fill="#0f172a"/>
+      <line x1="357" y1="205" x2="388" y2="90" stroke="url(#goldGrad)" stroke-width="3"/>
+    </g>
+
+    <!-- Collar -->
+    <path d="M140,48 C160,82 240,82 260,48 C240,70 160,70 140,48 Z" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+
+    <!-- 3 STARS (★★★) ABOVE CREST -->
+    <!-- Star 1 (Left) -->
+    <polygon points="142,94 144,100 150,100 145,104 147,110 142,106 137,110 139,104 134,100 140,100" fill="url(#goldGrad)"/>
+    <!-- Star 2 (Center Top) -->
+    <polygon points="152,82 154,88 160,88 155,92 157,98 152,94 147,98 149,92 144,88 150,88" fill="url(#goldGrad)"/>
+    <!-- Star 3 (Right) -->
+    <polygon points="162,94 164,100 170,100 165,104 167,110 162,106 157,110 159,104 154,100 160,100" fill="url(#goldGrad)"/>
+
+    <!-- AFA CREST (Left Chest) -->
+    <g transform="translate(138, 114) scale(0.7)">
+      <path d="M0,0 L40,0 C40,25 35,45 20,55 C5,45 0,25 0,0 Z" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="3"/>
+      <path d="M5,4 L35,4 C35,23 30,41 20,49 C10,41 5,23 5,4 Z" fill="#0f172a"/>
+      <rect x="15" y="4" width="10" height="40" fill="url(#celesteGrad)"/>
+      <text x="20" y="28" font-family="'Montserrat', sans-serif" font-size="13" font-weight="900" fill="url(#goldGrad)" text-anchor="middle" letter-spacing="1">AFA</text>
+    </g>
+
+    <!-- BRAND LOGO (Right Chest) -->
+    <g transform="translate(242, 125) scale(0.8)">
+      <polygon points="0,15 5,0 12,0 7,15" fill="#111827"/>
+      <polygon points="10,15 15,4 22,4 17,15" fill="#111827"/>
+      <polygon points="20,15 25,8 32,8 27,15" fill="#111827"/>
+    </g>
+
+    <!-- FIFA WORLD CHAMPIONS 2022 GOLD SHIELD (Center) -->
+    <g transform="translate(185, 120)">
+      <path d="M0,0 L30,0 C30,18 25,32 15,40 C5,32 0,18 0,0 Z" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5"/>
+      <path d="M15,8 L17,16 L25,16 L19,21 L21,29 L15,24 L9,29 L11,21 L5,16 L13,16 Z" fill="#ffffff" opacity="0.9"/>
+      <text x="15" y="36" font-family="'Montserrat', sans-serif" font-size="6" font-weight="900" fill="#78350f" text-anchor="middle">2022</text>
+    </g>
+
+    <!-- NUMBER 10 (FRONT) -->
+    <text x="200" y="270" font-family="'Oswald', sans-serif" font-size="95" font-weight="700" fill="#111827" text-anchor="middle" letter-spacing="2">10</text>
+    <text x="200" y="315" font-family="'Oswald', sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="middle" letter-spacing="6">MESSI</text>
+  </g>
+
+  <!-- Product Name Badge Overlay -->
+  <g transform="translate(300, 535)">
+    <rect x="-180" y="-18" width="360" height="36" rx="18" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle" letter-spacing="1">ARGENTINA 3 ESTRELLAS • MESSI 10</text>
+  </g>
+</svg>
+

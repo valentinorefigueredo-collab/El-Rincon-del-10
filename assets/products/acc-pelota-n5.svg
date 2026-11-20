@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgBall" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#18233a"/>
+      <stop offset="60%" stop-color="#0a101c"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </radialGradient>
+    <radialGradient id="ballSphere" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259"/>
+      <stop offset="100%" stop-color="#ffa751"/>
+    </linearGradient>
+    <linearGradient id="celesteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgBall)"/>
+  <circle cx="300" cy="270" r="210" fill="#38bdf8" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- MATCHBALL N5 GROUP -->
+  <g filter="url(#shadow)" transform="translate(300, 270)">
+    <!-- Base 3D Sphere -->
+    <circle cx="0" cy="0" r="175" fill="url(#ballSphere)"/>
+
+    <clipPath id="ballClip">
+      <circle cx="0" cy="0" r="175"/>
+    </clipPath>
+
+    <!-- Seamless Thermally Bonded Panels & Aerodynamic Graphics -->
+    <g clip-path="url(#ballClip)">
+      <!-- Panel Seams (Curved Thermal Bond lines) -->
+      <path d="M-150,-40 C-80,-20 80,-20 150,-40" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+      <path d="M-140,50 C-60,70 60,70 140,50" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+      <path d="M-40,-150 C-20,-80 -20,80 -40,150" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+      <path d="M50,-140 C70,-60 70,60 50,140" stroke="#94a3b8" stroke-width="2.5" fill="none"/>
+
+      <!-- Celeste Dynamic Aero Wings -->
+      <path d="M-80,-100 Q-20,-30 40,-80 Q-10,-120 -80,-100 Z" fill="url(#celesteGrad)"/>
+      <path d="M-60,110 Q10,70 80,100 Q30,130 -60,110 Z" fill="url(#celesteGrad)"/>
+      <path d="M-110,10 Q-60,-50 -100,-80 Q-130,-20 -110,10 Z" fill="url(#celesteGrad)"/>
+      <path d="M110,-10 Q60,50 100,80 Q130,20 110,-10 Z" fill="url(#celesteGrad)"/>
+
+      <!-- Golden Accent Swirls -->
+      <path d="M-60,-80 Q0,-20 60,-65" stroke="url(#goldGrad)" stroke-width="5" fill="none"/>
+      <path d="M-50,90 Q10,50 70,80" stroke="url(#goldGrad)" stroke-width="5" fill="none"/>
+      <path d="M-95,0 Q-50,-35 -85,-65" stroke="url(#goldGrad)" stroke-width="4" fill="none"/>
+      <path d="M95,0 Q50,35 85,65" stroke="url(#goldGrad)" stroke-width="4" fill="none"/>
+
+      <!-- Central Hexagon Thermal Panel -->
+      <polygon points="0,-35 30,-15 30,25 0,45 -30,25 -30,-15" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+      
+      <!-- Gold Number 10 on Central Panel -->
+      <text x="0" y="16" font-family="'Oswald', sans-serif" font-size="28" font-weight="700" fill="url(#goldGrad)" text-anchor="middle">10</text>
+      
+      <!-- FIFA Quality Pro Stamp Graphic -->
+      <g transform="translate(0, 85)">
+        <rect x="-35" y="-10" width="70" height="20" rx="3" fill="#0f172a" stroke="#cbd5e1" stroke-width="1"/>
+        <text x="0" y="3" font-family="'Montserrat', sans-serif" font-size="7" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">MATCHBALL</text>
+      </g>
+
+      <!-- Gloss Highlight Arc -->
+      <path d="M-120,-120 A160,160 0 0,1 60,-155 A175,175 0 0,0 -120,-120 Z" fill="#ffffff" opacity="0.4"/>
+    </g>
+
+    <!-- Outer Ring Lighting Accent -->
+    <circle cx="0" cy="0" r="175" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+  </g>
+
+  <!-- Product Tag Badge -->
+  <g transform="translate(300, 535)">
+    <rect x="-195" y="-18" width="390" height="36" rx="18" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle" letter-spacing="1">PELOTA MATCHBALL N°5 TERMOSELLADA</text>
+  </g>
+</svg>
+

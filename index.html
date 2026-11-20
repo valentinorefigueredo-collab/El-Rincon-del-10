@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Rincón del 10 | Camisetas y Accesorios de Fútbol</title>
+    <meta name="description" content="El Rincón del 10 - Tu tienda online de camisetas de fútbol actuales y retro, accesorios, indumentaria deportiva y estampados personalizados. Envíos a todo el país.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,700&family=Oswald:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- BARRA DE ANUNCIOS SUPERIOR -->
+    <div class="top-announcement">
+        <div class="container announcement-content">
+            <span><i class="fa-solid fa-truck-fast"></i> Envíos a todo el país</span>
+            <span class="divider">|</span>
+            <span><i class="fa-solid fa-credit-card"></i> 3 y 6 Cuotas Sin Interés</span>
+            <span class="divider">|</span>
+            <span><i class="fa-solid fa-bolt"></i> 15% OFF abonando por Transferencia</span>
+            <span class="divider">|</span>
+            <span class="highlight-code">Cupón: <strong>RINCON10</strong> para 10% extra</span>
+        </div>
+    </div>
+
+    <!-- ENCABEZADO / NAVBAR -->
+    <header class="main-header" id="header">
+        <div class="container header-content">
+            <!-- Botón Menú Mobile -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <!-- Logotipo -->
+            <a href="#hero" class="brand-logo">
+                <div class="logo-badge">
+                    <span class="logo-number">10</span>
+                </div>
+                <div class="logo-text">
+                    <span class="brand-title">EL RINCÓN <span class="highlight-gold">DEL 10</span></span>
+                    <span class="brand-subtitle">CAMISETAS & FÚTBOL STORE</span>
+                </div>
+            </a>
+
+            <!-- Navegación Principal -->
+            <nav class="main-nav" id="mainNav">
+                <div class="mobile-nav-header">
+                    <span class="mobile-title">Menú de Navegación</span>
+                    <button class="close-mobile-menu" id="closeMobileMenuBtn">&times;</button>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                    <li><a href="#catalogo" class="nav-link" data-filter="camisetas">Camisetas</a></li>
+                    <li><a href="#catalogo" class="nav-link" data-filter="retro">Retro</a></li>
+                    <li><a href="#catalogo" class="nav-link" data-filter="accesorios">Accesorios</a></li>
+                    <li><a href="#personalizador" class="nav-link special-link"><i class="fa-solid fa-wand-magic-sparkles"></i> Personalizá tu 10</a></li>
+                    <li><a href="#admin-costos" class="nav-link special-link-costos" id="navCostosBtn"><i class="fa-solid fa-calculator"></i> Calculadora Costos</a></li>
+                    <li><a href="#beneficios" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="mobile-nav-footer">
+                    <a href="https://wa.me/5493757323681" target="_blank" class="mobile-wa-btn">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp Directo
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Acciones Header (Buscador, Favoritos, Carrito) -->
+            <div class="header-actions">
+                <!-- Buscador Rápido -->
+                <div class="header-search-wrap" id="searchWrap">
+                    <input type="text" id="searchInput" placeholder="Buscar camiseta, club o accesorio..." autocomplete="off">
+                    <button class="search-btn" id="searchBtn" aria-label="Buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="clear-search-btn" id="clearSearchBtn" aria-label="Limpiar"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+
+                <!-- Favoritos -->
+                <button class="action-btn wishlist-btn" id="wishlistOpenBtn" title="Mis Favoritos" aria-label="Favoritos">
+                    <i class="fa-regular fa-heart"></i>
+                    <span class="badge-count" id="wishlistCount">0</span>
+                </button>
+
+                <!-- Carrito -->
+                <button class="action-btn cart-btn" id="cartOpenBtn" title="Ver Carrito de Compras" aria-label="Carrito">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="badge-count" id="cartCount">0</span>
+                    <span class="cart-total-preview" id="cartTotalPreview">$0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text-block">
+                <span class="hero-pill"><i class="fa-solid fa-fire"></i> MICROEMPRENDIMIENTO FUTBOLERO</span>
+                <h1 class="hero-title">
+                    LA PASIÓN DE <span class="text-gold">LA 10</span><br>
+                    EN TU PIEL
+                </h1>
+                <p class="hero-description">
+                    Camisetas oficiales actuales, reliquias retro inmortales y accesorios de alta competencia. Confección premium y estampados personalizados con el dorsal de tu ídolo o tu propio nombre.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#catalogo" class="btn btn-primary btn-glow">
+                        <i class="fa-solid fa-shirt"></i> Ver Catálogo Completo
+                    </a>
+                    <a href="#personalizador" class="btn btn-outline-gold">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> Personalizar Dorsal
+                    </a>
+                </div>
+                
+                <!-- Micro Métricas / Trust -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">+5.000</span>
+                        <span class="stat-label">Camisetas entregadas</span>
+                    </div>
+                    <div class="stat-separator"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">4.9 / 5</span>
+                        <span class="stat-label">Calificación de clientes</span>
+                    </div>
+                    <div class="stat-separator"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Garantía de calidad</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Banner Visual Hero -->
+            <div class="hero-visual-card">
+                <div class="featured-badge-float">
+                    <i class="fa-solid fa-crown"></i> EDICIÓN CAMPEÓN
+                </div>
+                <div class="hero-card-inner">
+                    <div class="card-jersey-preview">
+                        <span class="hero-jersey-number">10</span>
+                        <span class="hero-jersey-name">MESSI</span>
+                    </div>
+                    <div class="hero-card-meta">
+                        <h3>Argentina 3 Estrellas</h3>
+                        <p>Titular con Parche Campeón del Mundo 2022</p>
+                        <div class="hero-card-price">
+                            <span class="old-price">$58.000</span>
+                            <span class="new-price">$48.999</span>
+                        </div>
+                        <button class="btn btn-secondary btn-sm" onclick="quickAddToCart('cam-arg-2022')">
+                            <i class="fa-solid fa-cart-plus"></i> Lo Quiero
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE BENEFICIOS RÁPIDOS -->
+    <section class="trust-banner">
+        <div class="container trust-grid">
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fa-solid fa-box-open"></i></div>
+                <div class="trust-text">
+                    <h4>Calidad Premium Thai AAA</h4>
+                    <p>Detalles idénticos, telas microventiladas y escudos bordados</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fa-solid fa-truck"></i></div>
+                <div class="trust-text">
+                    <h4>Envíos a Todo el País</h4>
+                    <p>Por Correo Argentino y Andreani con número de seguimiento</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="trust-text">
+                    <h4>Cambios Fáciles</h4>
+                    <p>¿No te quedó el talle? Te lo cambiamos sin complicaciones</p>
+                </div>
+            </div>
+            <div class="trust-item">
+                <div class="trust-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <div class="trust-text">
+                    <h4>Atención Humana 1 a 1</h4>
+                    <p>Respondemos todas tus dudas directamente por WhatsApp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE OFERTA RELÁMPAGO CON COUNTDOWN -->
+    <section class="flash-sale-section">
+        <div class="container">
+            <div class="flash-sale-box">
+                <div class="flash-sale-info">
+                    <div class="flash-badge"><i class="fa-solid fa-stopwatch"></i> OFERTA RELÁMPAGO DEL FIN DE SEMANA</div>
+                    <h2>Combo Jugador N°10: 25% OFF</h2>
+                    <p>Llevate cualquier camiseta + Pack de medias Grip Antideslizantes + Botinero impermeable con descuento exclusivo usando el cupón <strong>COMBO10</strong>.</p>
+                    <div class="countdown-timer" id="countdownTimer">
+                        <div class="timer-unit">
+                            <span class="unit-val" id="timerHours">18</span>
+                            <span class="unit-lbl">Horas</span>
+                        </div>
+                        <span class="timer-colon">:</span>
+                        <div class="timer-unit">
+                            <span class="unit-val" id="timerMinutes">42</span>
+                            <span class="unit-lbl">Minutos</span>
+                        </div>
+                        <span class="timer-colon">:</span>
+                        <div class="timer-unit">
+                            <span class="unit-val" id="timerSeconds">30</span>
+                            <span class="unit-lbl">Segundos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flash-sale-action">
+                    <button class="btn btn-primary btn-lg" onclick="applyPromoCodeDirect('COMBO10')">
+                        <i class="fa-solid fa-tag"></i> Activar Descuento en Carrito
+                    </button>
+                    <span class="flash-note">¡Quedan pocas unidades en stock!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUCTOS -->
+    <section class="catalog-section" id="catalogo">
+        <div class="container">
+            <!-- Encabezado de Sección -->
+            <div class="section-header">
+                <div class="section-title-wrap">
+                    <span class="section-subtitle">NUESTRA COLECCIÓN</span>
+                    <h2 class="section-title">Elige Tu Próxima Camiseta o Accesorio</h2>
+                </div>
+                
+                <!-- Ordenamiento -->
+                <div class="sort-selector-wrap">
+                    <label for="sortSelect"><i class="fa-solid fa-arrow-down-wide-short"></i> Ordenar por:</label>
+                    <select id="sortSelect">
+                        <option value="featured">Destacados</option>
+                        <option value="price-asc">Menor precio</option>
+                        <option value="price-desc">Mayor precio</option>
+                        <option value="rating">Mejor calificados</option>
+                        <option value="name">Nombre (A-Z)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Filtros / Categorías en botones píldora -->
+            <div class="filters-container">
+                <div class="category-pills" id="categoryPills">
+                    <button class="pill-btn active" data-category="all">
+                        <i class="fa-solid fa-globe"></i> Todos los Productos
+                    </button>
+                    <button class="pill-btn" data-category="camisetas">
+                        <i class="fa-solid fa-shirt"></i> Todas las Camisetas
+                    </button>
+                    <button class="pill-btn" data-category="retro">
+                        <i class="fa-solid fa-clock-rotate-left"></i> Joyas Retro
+                    </button>
+                    <button class="pill-btn" data-category="selecciones">
+                        <i class="fa-solid fa-flag"></i> Selecciones
+                    </button>
+                    <button class="pill-btn" data-category="clubes">
+                        <i class="fa-solid fa-shield"></i> Clubes
+                    </button>
+                    <button class="pill-btn" data-category="accesorios">
+                        <i class="fa-solid fa-futbol"></i> Accesorios & Equipamiento
+                    </button>
+                </div>
+            </div>
+
+            <!-- Contador de resultados -->
+            <div class="results-bar">
+                <p id="resultsCount">Mostrando todos los productos</p>
+                <button class="btn-text-link" id="resetFiltersBtn" style="display: none;">
+                    <i class="fa-solid fa-rotate-left"></i> Limpiar filtros
+                </button>
+            </div>
+
+            <!-- Grilla de Productos -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Se inyecta dinámicamente con JavaScript -->
+            </div>
+
+            <!-- Estado vacío si la búsqueda no arroja resultados -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div class="empty-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <h3>No encontramos productos para tu búsqueda</h3>
+                <p>Intentá buscar con otros términos como "Messi", "Retro", "Boca", "Medias" o restablecé los filtros.</p>
+                <button class="btn btn-secondary" onclick="resetAllFilters()">Ver Todos los Productos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERSONALIZADOR EN VIVO: "EL TALLER DEL 10" -->
+    <section class="customizer-section" id="personalizador">
+        <div class="container">
+            <div class="customizer-wrapper">
+                <div class="customizer-info-col">
+                    <span class="section-subtitle gold"><i class="fa-solid fa-wand-magic-sparkles"></i> SERVICIO EXCLUSIVO</span>
+                    <h2 class="section-title white">El Taller del 10: Personalizá Tu Espalda</h2>
+                    <p class="customizer-lead">
+                        En <strong>El Rincón del 10</strong> estampamos tu camiseta con la tipografía oficial del equipo. Ingresá tu nombre, elegí tu dorsal preferido o seleccioná a una leyenda del fútbol.
+                    </p>
+
+                    <!-- Formulario de personalización -->
+                    <div class="customizer-form">
+                        <!-- Selector de Modelo de Camiseta -->
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-shirt"></i> Seleccioná el Modelo:</label>
+                            <div class="preset-buttons" id="presetButtons">
+                                <!-- Generado por JS -->
+                            </div>
+                        </div>
+
+                        <!-- Presets de Leyendas Rápidas -->
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-star"></i> O elegí un 10 Histórico:</label>
+                            <div class="legend-buttons">
+                                <button type="button" class="btn-legend" onclick="setLegend('MESSI', 10)">MESSI 10</button>
+                                <button type="button" class="btn-legend" onclick="setLegend('MARADONA', 10)">MARADONA 10</button>
+                                <button type="button" class="btn-legend" onclick="setLegend('RIQUELME', 10)">RIQUELME 10</button>
+                                <button type="button" class="btn-legend" onclick="setLegend('PELÉ', 10)">PELÉ 10</button>
+                                <button type="button" class="btn-legend" onclick="setLegend('MODRIC', 10)">MODRIC 10</button>
+                            </div>
+                        </div>
+
+                        <!-- Inputs de Nombre y Número -->
+                        <div class="form-row">
+                            <div class="form-group col-7">
+                                <label for="customNameInput"><i class="fa-solid fa-font"></i> Nombre en el Dorsal:</label>
+                                <input type="text" id="customNameInput" maxlength="12" value="MESSI" placeholder="Ej: TU NOMBRE">
+                                <small class="helper-text">Máximo 12 letras</small>
+                            </div>
+                            <div class="form-group col-5">
+                                <label for="customNumberInput"><i class="fa-solid fa-hashtag"></i> Número:</label>
+                                <input type="number" id="customNumberInput" min="1" max="99" value="10">
+                                <small class="helper-text">Del 1 al 99</small>
+                            </div>
+                        </div>
+
+                        <!-- Selector de Talle -->
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-ruler-combined"></i> Elegí tu Talle: <button type="button" class="link-modal-sizes" id="openSizeGuideBtn">Ver tabla de medidas</button></label>
+                            <div class="size-selector-pills" id="customizerSizePills">
+                                <button type="button" class="size-pill" data-size="S">S</button>
+                                <button type="button" class="size-pill" data-size="M">M</button>
+                                <button type="button" class="size-pill active" data-size="L">L</button>
+                                <button type="button" class="size-pill" data-size="XL">XL</button>
+                                <button type="button" class="size-pill" data-size="XXL">XXL</button>
+                            </div>
+                        </div>
+
+                        <!-- Precio y botón para agregar -->
+                        <div class="customizer-action-box">
+                            <div class="customizer-pricing">
+                                <span class="custom-price-label">Precio Camiseta + Estampado:</span>
+                                <span class="custom-price-val">$51.999</span>
+                                <span class="custom-installment-val">3 cuotas sin interés de $17.333</span>
+                            </div>
+                            <button type="button" class="btn btn-primary btn-lg" id="addCustomJerseyBtn">
+                                <i class="fa-solid fa-cart-plus"></i> Agregar Esta Camiseta Personalizada
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visualizador Mockup Interactivo de la Camiseta -->
+                <div class="customizer-visual-col">
+                    <div class="mockup-container">
+                        <div class="mockup-header-tag">
+                            <i class="fa-solid fa-eye"></i> Vista Previa en Tiempo Real
+                        </div>
+
+                        <!-- Mockup SVG & Canvas -->
+                        <div class="jersey-mockup" id="jerseyMockup">
+                            <!-- Patrón de fondo / rayas -->
+                            <div class="jersey-body" id="jerseyBody">
+                                <div class="jersey-collar"></div>
+                                <div class="jersey-sleeves">
+                                    <div class="sleeve left"></div>
+                                    <div class="sleeve right"></div>
+                                </div>
+                                <div class="jersey-stripes" id="jerseyStripes"></div>
+                                <div class="jersey-band" id="jerseyBand"></div>
+                                
+                                <!-- Contenido Estampado Dorsal -->
+                                <div class="jersey-print-area">
+                                    <div class="print-name" id="mockupName">MESSI</div>
+                                    <div class="print-number" id="mockupNumber">10</div>
+                                    <div class="print-brand-tag">EL RINCÓN DEL 10</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mockup-legend-tip">
+                            <i class="fa-solid fa-circle-check"></i> Estampado oficial con vinilo termo-transferible de alta resistencia a lavados.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS Y OPINIONES DE CLIENTES -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">COMUNIDAD FUTBOLERA</span>
+                <h2 class="section-title">Lo Que Dicen Quienes Ya Visten la 10</h2>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Compré la camiseta retro del Diego del 94 y la calidad es alucinante. La tela pesada con el dibujo en rombos es idéntica a la original. Llegó a Rosario en 3 días hábiles. ¡Son unos cracks!"
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Facundo Benítez</h4>
+                            <span>Rosario, Santa Fe • <span class="verified-tag"><i class="fa-solid fa-check"></i> Comprador verificado</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "Pedí la de las 3 Estrellas personalizada con mi apellido y número 10 para mi cumple. El estampado impecable y las medias antideslizantes son de lo mejor para jugar los torneos de los sábados."
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Matías Álvarez</h4>
+                            <span>Córdoba Capital • <span class="verified-tag"><i class="fa-solid fa-check"></i> Comprador verificado</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">
+                        "La atención por WhatsApp es súper rápida y amable. Tenía dudas con el talle de las canilleras de carbono y me guiaron al instante. Recomendadísimo El Rincón del 10."
+                    </p>
+                    <div class="review-author">
+                        <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
+                        <div class="author-info">
+                            <h4>Gonzalo Fernández</h4>
+                            <span>Buenos Aires • <span class="verified-tag"><i class="fa-solid fa-check"></i> Comprador verificado</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN NOSOTROS / BENEFICIOS -->
+    <section class="about-section" id="beneficios">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text-col">
+                    <span class="section-subtitle">NUESTRA HISTORIA</span>
+                    <h2 class="section-title">Nacidos Por y Para el Fútbol</h2>
+                    <p>
+                        <strong>El Rincón del 10</strong> nació como un sueño entre amigos amantes de la pelota: la idea de que cada futbolero pudiera tener acceso a la camiseta de sus sueños, a esa reliquia histórica con la que creció gritando goles, y a los accesorios de entrenamiento que usan los profesionales.
+                    </p>
+                    <p>
+                        Nos apasiona el detalle: los bordados bien definidos, las telas livianas que transpiran con vos en la cancha y la emoción inolvidable de abrir un paquete y ponerte la 10 por primera vez.
+                    </p>
+                    <div class="about-features-list">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check text-gold"></i>
+                            <span>Atención personalizada en cada pedido</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check text-gold"></i>
+                            <span>Prendas controladas una por una antes del despacho</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-circle-check text-gold"></i>
+                            <span>Embalaje protector para que tu pedido llegue impecable</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats-col">
+                    <div class="experience-card">
+                        <div class="exp-number">10</div>
+                        <div class="exp-text">
+                            <h3>El Número Mágico</h3>
+                            <p>Símbolo del talento, la rebeldía, la magia y el liderazgo adentro de la cancha.</p>
+                        </div>
+                    </div>
+                    <div class="social-proof-badges">
+                        <div class="proof-badge">
+                            <i class="fa-solid fa-box"></i>
+                            <span>+100 Envíos Semanales</span>
+                        </div>
+                        <div class="proof-badge">
+                            <i class="fa-solid fa-star"></i>
+                            <span>4.9 Valoración Promedio</span>
+                        </div>
+                        <div class="proof-badge">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <span>Soporte Post-Venta 24/7</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO Y PREGUNTAS FRECUENTES -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Columna Formulario -->
+                <div class="contact-form-col">
+                    <span class="section-subtitle">ESTAMOS PARA AYUDARTE</span>
+                    <h2 class="section-title">Escribinos tu Consulta</h2>
+                    <p>¿Buscás una camiseta específica que no ves en el catálogo? ¿Querés hacer un pedido por mayor para tu equipo? Dejanos tu mensaje.</p>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group col-6">
+                                <label for="contactName">Nombre y Apellido *</label>
+                                <input type="text" id="contactName" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="contactPhone">WhatsApp / Teléfono *</label>
+                                <input type="tel" id="contactPhone" required placeholder="Ej: 3757 323681">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Correo Electrónico</label>
+                            <input type="email" id="contactEmail" placeholder="tucorreo@ejemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="contactSubject">Motivo de Consulta</label>
+                            <select id="contactSubject">
+                                <option value="consulta">Consulta de talle / producto</option>
+                                <option value="pedido_especial">Búsqueda de camiseta por encargo</option>
+                                <option value="mayorista">Venta para equipos de fútbol / mayorista</option>
+                                <option value="envio">Estado de mi envío</option>
+                                <option value="otro">Otro motivo</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactMessage">Tu Mensaje *</label>
+                            <textarea id="contactMessage" rows="4" required placeholder="Contanos qué camiseta o accesorio necesitás..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Columna Canales Directos & FAQ Rápido -->
+                <div class="contact-info-col">
+                    <div class="direct-contact-card">
+                        <h3>Contacto Inmediato</h3>
+                        <p>Preferimos hablar directo por WhatsApp para coordinar fotos reales, detalles y pagos.</p>
+                        
+                        <div class="contact-methods">
+                            <a href="https://wa.me/5493757323681?text=Hola%20El%20Rinc%C3%B3n%20del%2010,%20tengo%20una%20consulta" target="_blank" class="method-link wa-method">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <div>
+                                    <strong>Chatear por WhatsApp</strong>
+                                    <span>+54 9 3757 32-3681</span>
+                                </div>
+                            </a>
+
+                            <a href="mailto:contacto@elrincondel10.com" class="method-link mail-method">
+                                <i class="fa-solid fa-envelope"></i>
+                                <div>
+                                    <strong>Escribinos por Email</strong>
+                                    <span>contacto@elrincondel10.com</span>
+                                </div>
+                            </a>
+
+                            <div class="method-link location-method">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <strong>Punto de Retiro & Envíos</strong>
+                                    <span>Buenos Aires, Argentina (Envíos a todo el país)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Preguntas Frecuentes Rápidas -->
+                        <div class="faq-accordion">
+                            <h4>Preguntas Frecuentes</h4>
+                            <details class="faq-item">
+                                <summary>¿Cuánto tardan los envíos?</summary>
+                                <p>Despachamos dentro de las 24 a 48 hs hábiles. Los envíos suelen demorar entre 2 y 5 días hábiles según la provincia.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>¿Cómo son los talles?</summary>
+                                <p>Nuestras camisetas tienen corte regular estándar argentino. Podés chequear la tabla de medidas en cada producto.</p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>¿Qué medios de pago aceptan?</summary>
+                                <p>Aceptamos Mercado Pago, tarjetas de débito/crédito (con cuotas sin interés) y transferencia bancaria con 15% de descuento.</p>
+                            </details>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PRIVADA: GESTIÓN DE COSTOS Y RENTABILIDAD -->
+    <section class="admin-costos-section" id="admin-costos">
+        <div class="container">
+            <!-- PANTALLA 1: BLOQUEO POR CONTRASEÑA -->
+            <div class="admin-auth-card" id="adminAuthBox">
+                <div class="admin-lock-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <span class="section-subtitle gold"><i class="fa-solid fa-lock"></i> SECCIÓN PRIVADA DE ADMINISTRACIÓN</span>
+                <h2 class="admin-auth-title">Calculadora de Costos & Rentabilidad</h2>
+                <p class="admin-auth-desc">
+                    Área exclusiva para el microemprendimiento. Ingresá tus costos fijos y variables para calcular el costo total de cualquier prenda o accesorio, margen de ganancia y precio de venta recomendado.
+                </p>
+                <form id="adminLoginForm" class="admin-login-form">
+                    <div class="admin-input-wrap">
+                        <i class="fa-solid fa-key input-icon"></i>
+                        <input type="password" id="adminPassInput" placeholder="Ingresá la contraseña de acceso..." required autocomplete="current-password">
+                        <button type="button" class="btn-toggle-pass" id="btnTogglePass" title="Mostrar/Ocultar contraseña" aria-label="Mostrar/Ocultar contraseña"><i class="fa-regular fa-eye"></i></button>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="btnSubmitAdminPass">
+                        <i class="fa-solid fa-unlock"></i> Desbloquear Panel de Costos
+                    </button>
+                    <div class="admin-auth-feedback" id="adminAuthFeedback"></div>
+                </form>
+            </div>
+
+            <!-- PANTALLA 2: PANEL DE CONTROL DE COSTOS (ACCESO DESBLOQUEADO) -->
+            <div class="admin-dashboard-panel" id="adminDashboardPanel" style="display: none;">
+                <!-- Barra superior de gestión -->
+                <div class="admin-panel-topbar">
+                    <div class="panel-status-info">
+                        <span class="status-indicator"></span>
+                        <div>
+                            <h3>Panel de Gestión de Costos Activo</h3>
+                            <span class="panel-tagline">El Rincón del 10 • Modo Emprendedor</span>
+                        </div>
+                    </div>
+                    <div class="panel-topbar-actions">
+                        <button type="button" class="btn btn-secondary btn-sm" id="btnExportCosts">
+                            <i class="fa-solid fa-file-arrow-down"></i> Exportar Resumen
+                        </button>
+                        <button type="button" class="btn btn-outline-danger btn-sm" id="adminLogoutBtn">
+                            <i class="fa-solid fa-lock"></i> Bloquear Panel
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Grid principal de la calculadora -->
+                <div class="admin-calc-grid">
+                    <!-- Formulario de Costos -->
+                    <div class="admin-card calc-inputs-card">
+                        <div class="card-header-styled">
+                            <i class="fa-solid fa-sliders"></i>
+                            <div>
+                                <h4>Carga de Costos Fijos y Variables</h4>
+                                <small>Completá los valores para calcular el costo total de la prenda o accesorio</small>
+                            </div>
+                        </div>
+
+                        <form id="costCalcForm">
+                            <!-- Datos del Producto -->
+                            <div class="calc-section-group">
+                                <h5 class="calc-group-title"><i class="fa-solid fa-shirt"></i> 1. Datos del Producto y Lote</h5>
+                                <div class="form-row">
+                                    <div class="form-group col-7">
+                                        <label for="costProdName">Nombre o Modelo de la Prenda:</label>
+                                        <input type="text" id="costProdName" placeholder="Ej: Camiseta Titular 3 Estrellas" value="Camiseta Fútbol Titular">
+                                    </div>
+                                    <div class="form-group col-5">
+                                        <label for="costBatchUnits">Ventas/Prod. Mensual Estimada: <i class="fa-solid fa-circle-info" title="Cantidad de unidades vendidas al mes para prorratear los costos fijos"></i></label>
+                                        <input type="number" id="costBatchUnits" min="1" value="60" placeholder="Ej: 60">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Costos Variables (Por Unidad) -->
+                            <div class="calc-section-group">
+                                <div class="group-title-row">
+                                    <h5 class="calc-group-title"><i class="fa-solid fa-tags"></i> 2. Costos Variables Directos (por cada unidad)</h5>
+                                    <span class="group-subtotal" id="subtotalVariablesPreview">$0</span>
+                                </div>
+                                <div class="calc-fields-grid">
+                                    <div class="form-group">
+                                        <label for="varBaseCost">Prenda Base / Tela / Insumo ($):</label>
+                                        <input type="number" id="varBaseCost" class="calc-var-input" min="0" step="100" value="16000" placeholder="0">
+                                        <small class="helper-text">Costo de compra de la prenda lisa o tela</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="varPrintCost">Estampado / Vinilo / Dorsal ($):</label>
+                                        <input type="number" id="varPrintCost" class="calc-var-input" min="0" step="100" value="3800" placeholder="0">
+                                        <small class="helper-text">Vinilo termo-transferible, parches y tinta</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="varPackagingCost">Packaging & Etiquetas ($):</label>
+                                        <input type="number" id="varPackagingCost" class="calc-var-input" min="0" step="50" value="1200" placeholder="0">
+                                        <small class="helper-text">Bolsa con cierre, stickers y cinta</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="varDirectShipping">Costo de Envío / Despacho ($):</label>
+                                        <input type="number" id="varDirectShipping" class="calc-var-input" min="0" step="100" value="2500" placeholder="0">
+                                        <small class="helper-text">Embalaje de encomienda o cadetería</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="varPaymentFee">Comisión de Cobro / Pasarela ($):</label>
+                                        <input type="number" id="varPaymentFee" class="calc-var-input" min="0" step="50" value="1500" placeholder="0">
+                                        <small class="helper-text">Comisión bancaria o de pasarela de pago</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="varOtherCost">Otros Variables Unitarios ($):</label>
+                                        <input type="number" id="varOtherCost" class="calc-var-input" min="0" step="50" value="500" placeholder="0">
+                                        <small class="helper-text">Etiquetas colgantes, obsequios futboleros</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Costos Fijos Mensuales -->
+                            <div class="calc-section-group">
+                                <div class="group-title-row">
+                                    <h5 class="calc-group-title"><i class="fa-solid fa-building"></i> 3. Costos Fijos Mensuales (del negocio)</h5>
+                                    <span class="group-subtotal" id="subtotalFijosPreview">$0</span>
+                                </div>
+                                <div class="calc-fields-grid">
+                                    <div class="form-group">
+                                        <label for="fixRentCost">Alquiler de Espacio / Taller ($):</label>
+                                        <input type="number" id="fixRentCost" class="calc-fix-input" min="0" step="1000" value="80000" placeholder="0">
+                                        <small class="helper-text">Alquiler mensual o espacio de trabajo</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fixServicesCost">Luz, Servicios & WiFi ($):</label>
+                                        <input type="number" id="fixServicesCost" class="calc-fix-input" min="0" step="500" value="25000" placeholder="0">
+                                        <small class="helper-text">Consumo eléctrico de la plancha / internet</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fixAdsCost">Publicidad en Redes / Ads ($):</label>
+                                        <input type="number" id="fixAdsCost" class="calc-fix-input" min="0" step="1000" value="35000" placeholder="0">
+                                        <small class="helper-text">Inversión mensual en Instagram / Meta</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fixMaintenanceCost">Mantenimiento de Herramientas ($):</label>
+                                        <input type="number" id="fixMaintenanceCost" class="calc-fix-input" min="0" step="500" value="10000" placeholder="0">
+                                        <small class="helper-text">Desgaste de plancha térmica, teflón, tijeras</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fixSalaryCost">Retiro Emprendedor / Sueldo ($):</label>
+                                        <input type="number" id="fixSalaryCost" class="calc-fix-input" min="0" step="5000" value="200000" placeholder="0">
+                                        <small class="helper-text">Mano de obra y ganancia fija del mes</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="fixOtherCost">Otros Costos Fijos ($):</label>
+                                        <input type="number" id="fixOtherCost" class="calc-fix-input" min="0" step="500" value="10000" placeholder="0">
+                                        <small class="helper-text">Software, contador, imprevistos</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="calc-actions-row">
+                                <button type="button" class="btn btn-primary btn-block btn-lg" id="btnRecalculateCosts">
+                                    <i class="fa-solid fa-calculator"></i> Calcular Costo Total
+                                </button>
+                                <button type="button" class="btn btn-secondary" id="btnResetCalcFields" title="Restablecer valores">
+                                    <i class="fa-solid fa-rotate-left"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Dashboard de Resultados -->
+                    <div class="admin-card calc-results-card">
+                        <div class="card-header-styled">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <div>
+                                <h4>Resultados de Costos y Rentabilidad</h4>
+                                <small>Desglose financiero por unidad vendida</small>
+                            </div>
+                        </div>
+
+                        <!-- Card Destacada: COSTO TOTAL DEL PRODUCTO -->
+                        <div class="cost-total-hero-card">
+                            <span class="cost-hero-tag">COSTO TOTAL UNITARIO</span>
+                            <div class="cost-hero-value" id="resCostoTotalUnitario">$0</div>
+                            <span class="cost-hero-breakdown" id="resFormulaBreakdown">Variable: $0 + Fijo: $0</span>
+                        </div>
+
+                        <!-- Métricas de Desglose -->
+                        <div class="calc-metric-cards-grid">
+                            <div class="metric-card">
+                                <span class="metric-label"><i class="fa-solid fa-tags"></i> Costo Variable Unitario</span>
+                                <strong class="metric-value" id="resVariableUnitario">$0</strong>
+                                <span class="metric-percent" id="resVariablePercent">0% del costo</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label"><i class="fa-solid fa-building"></i> Costo Fijo Prorrateado</span>
+                                <strong class="metric-value" id="resFijoUnitario">$0</strong>
+                                <span class="metric-percent" id="resFijoPercent">0% del costo</span>
+                            </div>
+                            <div class="metric-card">
+                                <span class="metric-label"><i class="fa-solid fa-box-archive"></i> Total Costos Fijos Mes</span>
+                                <strong class="metric-value" id="resTotalFijosMes">$0</strong>
+                                <span class="metric-sublabel" id="resBatchLabel">Dividido en 60 u.</span>
+                            </div>
+                            <div class="metric-card highlight-metric">
+                                <span class="metric-label"><i class="fa-solid fa-scale-balanced"></i> Punto de Equilibrio</span>
+                                <strong class="metric-value text-gold" id="resBreakEvenUnits">0 prendas</strong>
+                                <span class="metric-sublabel">Para cubrir costos fijos</span>
+                            </div>
+                        </div>
+
+                        <!-- Simulador de Precio de Venta y Margen -->
+                        <div class="profit-simulator-box">
+                            <div class="sim-header">
+                                <h5><i class="fa-solid fa-sack-dollar"></i> Simulador de Margen de Ganancia</h5>
+                                <span class="sim-margin-badge" id="marginDisplayBadge">40% Margen</span>
+                            </div>
+
+                            <div class="margin-slider-wrap">
+                                <input type="range" id="marginSlider" min="10" max="150" step="5" value="40">
+                                <div class="slider-marks">
+                                    <span>10%</span>
+                                    <span>30%</span>
+                                    <span>50%</span>
+                                    <span>70%</span>
+                                    <span>100%</span>
+                                    <span>150%</span>
+                                </div>
+                            </div>
+
+                            <div class="quick-margin-buttons">
+                                <button type="button" class="btn-quick-margin" data-margin="30">+30%</button>
+                                <button type="button" class="btn-quick-margin active" data-margin="40">+40%</button>
+                                <button type="button" class="btn-quick-margin" data-margin="50">+50%</button>
+                                <button type="button" class="btn-quick-margin" data-margin="70">+70%</button>
+                                <button type="button" class="btn-quick-margin" data-margin="100">+100%</button>
+                            </div>
+
+                            <!-- Resultados de Venta -->
+                            <div class="sale-results-row">
+                                <div class="sale-price-box">
+                                    <span class="sale-box-title">Precio de Venta Sugerido:</span>
+                                    <div class="sale-price-number" id="resPrecioVentaSugerido">$0</div>
+                                    <small class="sale-installment-note" id="resCuotasVentaSugerido">3 cuotas de $0</small>
+                                </div>
+                                <div class="profit-box">
+                                    <span class="profit-box-title">Ganancia Neta por Prenda:</span>
+                                    <div class="profit-number" id="resGananciaNeta">$0</div>
+                                    <small class="profit-percent-note" id="resMargenRealGanancia">Sobre el costo total</small>
+                                </div>
+                            </div>
+
+                            <button type="button" class="btn btn-primary btn-block btn-lg" id="btnSaveCostProduct">
+                                <i class="fa-solid fa-floppy-disk"></i> Guardar Producto en la Lista
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Historial de Productos y Costos Guardados -->
+                <div class="admin-card saved-costs-table-card">
+                    <div class="card-header-styled">
+                        <i class="fa-solid fa-table-list"></i>
+                        <div>
+                            <h4>Productos y Costos Guardados</h4>
+                            <small>Historial de cotizaciones guardadas para consultas rápidas</small>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Producto</th>
+                                    <th>Costo Variable</th>
+                                    <th>Costo Fijo Unit.</th>
+                                    <th>Costo Total</th>
+                                    <th>Margen</th>
+                                    <th>Precio Sugerido</th>
+                                    <th>Ganancia Neta</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="savedCostsTableBody">
+                                <!-- Inyectado dinámicamente con JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="container footer-content">
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <span class="logo-number">10</span>
+                    <span class="footer-brand-title">EL RINCÓN DEL 10</span>
+                </div>
+                <p class="footer-desc">
+                    El microemprendimiento pensado para fanáticos que llevan la pasión del fútbol en la sangre. Camisetas únicas, accesorios de alto rendimiento y atención 100% personalizada.
+                </p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://tiktok.com" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://wa.me/5493757323681" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="#hero">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo Completo</a></li>
+                    <li><a href="#catalogo" onclick="filterByCategory('retro')">Camisetas Retro</a></li>
+                    <li><a href="#catalogo" onclick="filterByCategory('accesorios')">Accesorios & Grip</a></li>
+                    <li><a href="#personalizador">Personalizador de Dorsales</a></li>
+                    <li><a href="#admin-costos"><i class="fa-solid fa-lock"></i> Panel de Costos (Privado)</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Ayuda y Seguridad</h4>
+                <ul class="footer-links">
+                    <li><a href="#openSizeGuide" id="footerSizeGuideLink">Tabla de Talles</a></li>
+                    <li><a href="#contacto">Preguntas Frecuentes</a></li>
+                    <li><a href="#beneficios">Políticas de Cambio</a></li>
+                    <li><a href="#contacto">Envíos y Seguimiento</a></li>
+                    <li><a href="#contacto">Contacto Directo</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col newsletter-col">
+                <h4>Comunidad del 10</h4>
+                <p>Suscribite para recibir alertas de reingreso de camisetas históricas y descuentos relámpago.</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <input type="email" id="newsletterEmail" placeholder="Tu correo electrónico" required>
+                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></button>
+                </form>
+                <span class="newsletter-note">🎁 Al suscribirte recibís un 10% OFF en tu primera compra.</span>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-inner">
+                <p>© 2026 El Rincón del 10. Todos los derechos reservados. Desarrollado con pasión futbolera.</p>
+                <div class="payment-methods-icons">
+                    <i class="fa-brands fa-cc-visa" title="Visa"></i>
+                    <i class="fa-brands fa-cc-mastercard" title="Mastercard"></i>
+                    <i class="fa-solid fa-money-bill-transfer" title="Transferencia Bancaria"></i>
+                    <i class="fa-solid fa-mobile-screen-button" title="Mercado Pago"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- DRAWER DEL CARRITO (SLIDE OVER) -->
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-drawer-header">
+            <div class="cart-header-title">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <h3>Tu Carrito (<span id="cartDrawerCount">0</span>)</h3>
+            </div>
+            <button class="cart-close-btn" id="cartCloseBtn" aria-label="Cerrar carrito">&times;</button>
+        </div>
+
+        <!-- Barra de progreso para envío gratis -->
+        <div class="free-shipping-progress" id="freeShippingBanner">
+            <p id="freeShippingText">¡Sumá <strong>$25.000</strong> más para tener <strong>ENVÍO GRATIS</strong>!</p>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="shippingProgressBar" style="width: 0%;"></div>
+            </div>
+        </div>
+
+        <!-- Lista de Items en el carrito -->
+        <div class="cart-items-list" id="cartItemsList">
+            <!-- Inyectado por JS -->
+        </div>
+
+        <!-- Cupón de descuento -->
+        <div class="cart-coupon-wrap">
+            <div class="coupon-input-group">
+                <input type="text" id="couponInput" placeholder="Código de cupón (Ej: RINCON10)">
+                <button type="button" id="applyCouponBtn" class="btn btn-secondary btn-sm">Aplicar</button>
+            </div>
+            <div class="coupon-status-msg" id="couponStatus"></div>
+        </div>
+
+        <!-- Resumen de Totales -->
+        <div class="cart-summary-section">
+            <div class="summary-line">
+                <span>Subtotal</span>
+                <span id="cartSubtotal">$0</span>
+            </div>
+            <div class="summary-line discount-line" id="cartDiscountLine" style="display: none;">
+                <span>Descuento aplicado (<span id="discountPercent">0%</span>)</span>
+                <span id="cartDiscountAmount">-$0</span>
+            </div>
+            <div class="summary-line">
+                <span>Envío estimado</span>
+                <span id="cartShippingAmount">$0</span>
+            </div>
+            <div class="summary-line total-line">
+                <span>Total Final</span>
+                <span id="cartTotalFinal">$0</span>
+            </div>
+            <div class="summary-installments">
+                <i class="fa-solid fa-credit-card"></i> Hasta 3 cuotas sin interés de <span id="cartInstallmentAmount">$0</span>
+            </div>
+        </div>
+
+        <!-- Botones de Acción del Carrito -->
+        <div class="cart-drawer-footer">
+            <!-- Finalizar por WhatsApp (Ideal para microemprendimiento) -->
+            <button class="btn btn-whatsapp btn-block" id="whatsappCheckoutBtn">
+                <i class="fa-brands fa-whatsapp"></i> Finalizar Pedido por WhatsApp
+            </button>
+            <!-- Finalizar Online Directo -->
+            <button class="btn btn-primary btn-block" id="directCheckoutBtn">
+                <i class="fa-solid fa-lock"></i> Pagar Online / Transferencia
+            </button>
+        </div>
+    </div>
+
+    <!-- MODAL DE FAVORITOS (WISHLIST) -->
+    <div class="modal-overlay" id="wishlistModalOverlay">
+        <div class="modal-box wishlist-modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-heart text-gold"></i> Mis Favoritos (<span id="wishlistModalCount">0</span>)</h3>
+                <button class="modal-close" id="wishlistCloseBtn">&times;</button>
+            </div>
+            <div class="modal-body" id="wishlistModalBody">
+                <!-- Inyectado por JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE VISTA RÁPIDA DE PRODUCTO -->
+    <div class="modal-overlay" id="quickViewModalOverlay">
+        <div class="modal-box quick-view-modal">
+            <button class="modal-close" id="quickViewCloseBtn">&times;</button>
+            <div class="modal-body quick-view-body" id="quickViewBody">
+                <!-- Inyectado por JS dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE GUÍA DE TALLES -->
+    <div class="modal-overlay" id="sizeGuideModalOverlay">
+        <div class="modal-box size-guide-modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-ruler-combined text-gold"></i> Tabla de Talles de Camisetas</h3>
+                <button class="modal-close" id="sizeGuideCloseBtn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>Las medidas son aproximadas y corresponden a la prenda extendida sobre una superficie plana:</p>
+                <div class="table-responsive">
+                    <table class="size-table">
+                        <thead>
+                            <tr>
+                                <th>Talle</th>
+                                <th>Ancho (Sisa a Sisa)</th>
+                                <th>Largo Total</th>
+                                <th>Estatura Aprox.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>S</strong></td>
+                                <td>50 cm</td>
+                                <td>70 cm</td>
+                                <td>1.60m - 1.70m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>M</strong></td>
+                                <td>52 cm</td>
+                                <td>72 cm</td>
+                                <td>1.70m - 1.76m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>L</strong></td>
+                                <td>54 cm</td>
+                                <td>75 cm</td>
+                                <td>1.76m - 1.83m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>XL</strong></td>
+                                <td>57 cm</td>
+                                <td>78 cm</td>
+                                <td>1.83m - 1.90m</td>
+                            </tr>
+                            <tr>
+                                <td><strong>XXL</strong></td>
+                                <td>60 cm</td>
+                                <td>81 cm</td>
+                                <td>Más de 1.90m</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="size-tip">
+                    <i class="fa-solid fa-circle-info"></i> <strong>Recomendación:</strong> Si te gusta usar la camiseta holgada, te sugerimos pedir un talle más de tu habitual.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE CHECKOUT SIMULADO / CONFIRMACIÓN -->
+    <div class="modal-overlay" id="checkoutModalOverlay">
+        <div class="modal-box checkout-modal">
+            <div class="modal-header">
+                <h3><i class="fa-solid fa-shield-check text-gold"></i> Confirmación de Compra</h3>
+                <button class="modal-close" id="checkoutCloseBtn">&times;</button>
+            </div>
+            <div class="modal-body" id="checkoutModalContent">
+                <form id="checkoutForm">
+                    <div class="checkout-step-title">1. Datos del Comprador</div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Nombre y Apellido *</label>
+                            <input type="text" id="chkName" required placeholder="Ej: Lionel Messi">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Teléfono WhatsApp *</label>
+                            <input type="tel" id="chkPhone" required placeholder="Ej: 3757 323681">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Email *</label>
+                            <input type="email" id="chkEmail" required placeholder="ejemplo@correo.com">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>DNI / Identificación</label>
+                            <input type="text" id="chkDni" placeholder="Para el comprobante">
+                        </div>
+                    </div>
+
+                    <div class="checkout-step-title">2. Dirección de Entrega</div>
+                    <div class="form-row">
+                        <div class="form-group col-8">
+                            <label>Calle y Número *</label>
+                            <input type="text" id="chkAddress" required placeholder="Av. Siempre Viva 742">
+                        </div>
+                        <div class="form-group col-4">
+                            <label>Piso / Depto</label>
+                            <input type="text" id="chkFloor" placeholder="Opcional">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-6">
+                            <label>Ciudad / Localidad *</label>
+                            <input type="text" id="chkCity" required placeholder="Ej: Rosario">
+                        </div>
+                        <div class="form-group col-6">
+                            <label>Provincia *</label>
+                            <input type="text" id="chkProvince" required placeholder="Ej: Santa Fe">
+                        </div>
+                    </div>
+
+                    <div class="checkout-step-title">3. Método de Pago</div>
+                    <div class="payment-options">
+                        <label class="payment-option-card">
+                            <input type="radio" name="paymentMethod" value="transfer" checked>
+                            <div class="option-content">
+                                <strong>Transferencia Bancaria Inmediata</strong>
+                                <span>¡15% de Descuento Extra! Te enviamos los datos bancarios.</span>
+                            </div>
+                        </label>
+                        <label class="payment-option-card">
+                            <input type="radio" name="paymentMethod" value="card">
+                            <div class="option-content">
+                                <strong>Tarjeta de Crédito o Débito</strong>
+                                <span>3 y 6 Cuotas Sin Interés vía Mercado Pago.</span>
+                            </div>
+                        </label>
+                    </div>
+
+                    <div class="order-summary-box">
+                        <div class="summary-line">
+                            <span>Total a Pagar:</span>
+                            <strong id="chkModalTotal" class="text-gold">$0</strong>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitOrderBtn">
+                        <i class="fa-solid fa-check"></i> Confirmar y Generar Orden
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTONES FLOTANTES (WHATSAPP & SUBIR) -->
+    <a href="https://wa.me/5493757323681?text=Hola%20El%20Rinc%C3%B3n%20del%2010,%20quiero%20hacer%20un%20pedido" target="_blank" class="floating-wa-btn" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="floating-tooltip">¿Consultas? ¡Hablemos!</span>
+    </a>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Subir arriba">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- CONTENEDOR DE NOTIFICACIONES TOAST -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- SCRIPTS -->
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

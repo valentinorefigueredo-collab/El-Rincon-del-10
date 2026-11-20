@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bg94" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#18233c"/>
+      <stop offset="60%" stop-color="#0a1020"/>
+      <stop offset="100%" stop-color="#04060d"/>
+    </radialGradient>
+    <linearGradient id="blue94" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0052cc"/>
+      <stop offset="100%" stop-color="#002f87"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259"/>
+      <stop offset="100%" stop-color="#ffa751"/>
+    </linearGradient>
+    <pattern id="rhombusPattern" width="40" height="40" patternUnits="userSpaceOnUse">
+      <polygon points="20,0 40,20 20,40 0,20" fill="none" stroke="#000000" stroke-width="3" opacity="0.4"/>
+      <polygon points="20,10 30,20 20,30 10,20" fill="#000000" opacity="0.3"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bg94)"/>
+  <circle cx="120" cy="90" r="140" fill="#0052cc" opacity="0.15" filter="blur(40px)"/>
+  <circle cx="480" cy="90" r="140" fill="#ffe259" opacity="0.1" filter="blur(40px)"/>
+
+  <!-- JERSEY 94 -->
+  <g filter="url(#shadow)" transform="translate(100, 70)">
+    <!-- Base Shape -->
+    <path id="jBody94" d="M120,40 L60,110 L10,85 L45,210 L105,175 L105,430 L295,430 L295,175 L355,210 L390,85 L340,110 L280,40 C250,65 150,65 120,40 Z" fill="url(#blue94)" stroke="#000000" stroke-width="2"/>
+
+    <clipPath id="clip94">
+      <use href="#jBody94"/>
+    </clipPath>
+
+    <!-- Rhombus Diamond Pattern across right flank -->
+    <g clip-path="url(#clip94)">
+      <!-- Right side geometric black rhombuses -->
+      <rect x="210" y="40" width="160" height="400" fill="url(#rhombusPattern)"/>
+      <rect x="230" y="40" width="130" height="400" fill="#000000" opacity="0.18"/>
+      
+      <!-- White Shoulder 3-Stripes Left -->
+      <line x1="85" y1="58" x2="40" y2="92" stroke="#ffffff" stroke-width="4"/>
+      <line x1="95" y1="52" x2="48" y2="88" stroke="#ffffff" stroke-width="4"/>
+      <line x1="105" y1="46" x2="56" y2="84" stroke="#ffffff" stroke-width="4"/>
+
+      <!-- White Shoulder 3-Stripes Right -->
+      <line x1="315" y1="58" x2="360" y2="92" stroke="#ffffff" stroke-width="4"/>
+      <line x1="305" y1="52" x2="352" y2="88" stroke="#ffffff" stroke-width="4"/>
+      <line x1="295" y1="46" x2="344" y2="84" stroke="#ffffff" stroke-width="4"/>
+
+      <!-- Sleeve Cuffs Black & White -->
+      <path d="M10,85 L45,210 L30,215 L-5,90 Z" fill="#0f172a"/>
+      <line x1="43" y1="205" x2="12" y2="90" stroke="#ffffff" stroke-width="3"/>
+      <path d="M390,85 L355,210 L370,215 L405,90 Z" fill="#0f172a"/>
+      <line x1="357" y1="205" x2="388" y2="90" stroke="#ffffff" stroke-width="3"/>
+    </g>
+
+    <!-- Retro 94 Polo Collar -->
+    <path d="M130,40 L160,88 L200,98 L240,88 L270,40 C240,60 160,60 130,40 Z" fill="#0a0e1a" stroke="#ffffff" stroke-width="2"/>
+    <polygon points="175,85 200,125 225,85" fill="#0052cc"/>
+    <line x1="200" y1="98" x2="200" y2="125" stroke="#ffffff" stroke-width="2"/>
+
+    <!-- Retro AFA Crest (Left Chest) -->
+    <g transform="translate(140, 115) scale(0.7)">
+      <path d="M0,0 L42,0 C42,28 36,46 21,56 C6,46 0,28 0,0 Z" fill="#ffffff" stroke="url(#goldGrad)" stroke-width="3"/>
+      <path d="M5,4 L37,4 C37,24 32,42 21,50 C10,42 5,24 5,4 Z" fill="#0052cc"/>
+      <!-- Laurels -->
+      <path d="M10,35 Q3,25 6,15" stroke="url(#goldGrad)" stroke-width="2.5" fill="none"/>
+      <path d="M32,35 Q39,25 36,15" stroke="url(#goldGrad)" stroke-width="2.5" fill="none"/>
+      <text x="21" y="28" font-family="'Montserrat', sans-serif" font-size="12" font-weight="900" fill="url(#goldGrad)" text-anchor="middle">AFA</text>
+    </g>
+
+    <!-- Retro Equipment Brand Logo (Right Chest) -->
+    <g transform="translate(245, 125) scale(0.8)">
+      <polygon points="0,16 6,0 13,0 7,16" fill="#ffffff"/>
+      <polygon points="10,16 16,4 23,4 17,16" fill="#ffffff"/>
+      <polygon points="20,16 26,8 33,8 27,16" fill="#ffffff"/>
+    </g>
+
+    <!-- Number 10 (Front Center in Vintage 94 White Font) -->
+    <text x="200" y="275" font-family="'Oswald', sans-serif" font-size="95" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="2">10</text>
+    <text x="200" y="320" font-family="'Oswald', sans-serif" font-size="20" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="6">MARADONA</text>
+  </g>
+
+  <!-- Product Tag Badge -->
+  <g transform="translate(300, 535)">
+    <rect x="-185" y="-18" width="370" height="36" rx="18" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle" letter-spacing="1">ARGENTINA 1994 RETRO • MARADONA 10</text>
+  </g>
+</svg>
+

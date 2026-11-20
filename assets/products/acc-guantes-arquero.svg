@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGloves" cx="50%" cy="30%" r="75%">
+      <stop offset="0%" stop-color="#16233a"/>
+      <stop offset="60%" stop-color="#0a101d"/>
+      <stop offset="100%" stop-color="#03060c"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe259"/>
+      <stop offset="100%" stop-color="#ffa751"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+
+  <rect width="600" height="600" fill="url(#bgGloves)"/>
+  <circle cx="150" cy="180" r="140" fill="#38bdf8" opacity="0.12" filter="blur(40px)"/>
+  <circle cx="450" cy="320" r="140" fill="#ffe259" opacity="0.12" filter="blur(40px)"/>
+
+  <!-- GOALKEEPER GLOVES (PAIR) -->
+  <g filter="url(#shadow)" transform="translate(130, 80)">
+    <!-- LEFT GLOVE -->
+    <g transform="translate(40, 20) rotate(-6, 100, 200)">
+      <!-- Main Glove Base (Black Body with Palm wrap) -->
+      <!-- Wrist Strap -->
+      <rect x="40" y="320" width="95" height="55" rx="8" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+      <rect x="50" y="335" width="75" height="25" rx="4" fill="url(#cyanGrad)"/>
+      <text x="87" y="352" font-family="'Montserrat', sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle">GRIP PRO</text>
+
+      <!-- Hand Palm / Body -->
+      <path d="M45,320 L40,180 L20,170 Q10,135 30,120 Q50,110 60,140 L60,80 Q65,40 85,40 Q105,40 105,80 L105,60 Q112,25 130,25 Q148,25 148,65 L148,80 Q155,45 170,45 Q185,45 185,85 L180,120 Q190,85 205,90 Q218,100 210,135 L190,260 L180,320 Z" fill="#ffffff" stroke="#cbd5e1" stroke-width="2.5"/>
+
+      <!-- Palm Latex Embossed Grip Lines -->
+      <path d="M70,160 Q120,200 170,160" stroke="#94a3b8" stroke-width="2" fill="none"/>
+      <path d="M65,220 Q120,260 175,220" stroke="#94a3b8" stroke-width="2" fill="none"/>
+      <line x1="85" y1="80" x2="85" y2="150" stroke="#94a3b8" stroke-width="2"/>
+      <line x1="128" y1="65" x2="128" y2="150" stroke="#94a3b8" stroke-width="2"/>
+      <line x1="168" y1="85" x2="168" y2="150" stroke="#94a3b8" stroke-width="2"/>
+
+      <!-- Cyan Backhand Punch Zone Insert -->
+      <polygon points="75,170 165,170 155,230 85,230" fill="url(#cyanGrad)"/>
+      <!-- Gold Spine Protection indicator -->
+      <rect x="95" y="180" width="50" height="15" rx="3" fill="#0f172a"/>
+      <text x="120" y="191" font-family="'Montserrat', sans-serif" font-size="7" font-weight="900" fill="url(#goldGrad)" text-anchor="middle">4MM LATEX</text>
+    </g>
+
+    <!-- RIGHT GLOVE -->
+    <g transform="translate(150, 20) rotate(6, 100, 200)">
+      <!-- Wrist Strap -->
+      <rect x="40" y="320" width="95" height="55" rx="8" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+      <rect x="50" y="335" width="75" height="25" rx="4" fill="url(#cyanGrad)"/>
+      <text x="87" y="352" font-family="'Montserrat', sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle">GRIP PRO</text>
+
+      <!-- Hand Palm / Body -->
+      <path d="M45,320 L40,260 L20,135 Q12,100 25,90 Q40,85 50,120 L45,85 Q45,45 60,45 Q75,45 82,80 L82,65 Q82,25 100,25 Q118,25 125,60 L125,80 Q125,40 145,40 Q165,40 170,80 L170,140 Q180,110 200,120 Q220,135 210,170 L190,180 L185,320 Z" fill="#0f172a" stroke="#334155" stroke-width="2.5"/>
+
+      <!-- 3D Backhand Punch Zone Silicon Injections (Black & Cyan) -->
+      <g fill="url(#cyanGrad)">
+        <polygon points="50,165 75,165 70,225 45,225"/>
+        <polygon points="80,165 110,165 108,235 78,235"/>
+        <polygon points="115,165 145,165 148,235 118,235"/>
+        <polygon points="150,165 175,165 180,225 155,225"/>
+      </g>
+
+      <!-- Spine Protection Ridge Backing -->
+      <rect x="55" y="70" width="10" height="70" rx="3" fill="url(#goldGrad)"/>
+      <rect x="95" y="55" width="10" height="85" rx="3" fill="url(#goldGrad)"/>
+      <rect x="135" y="70" width="10" height="70" rx="3" fill="url(#goldGrad)"/>
+
+      <!-- Golden 10 Emblem -->
+      <circle cx="113" cy="275" r="16" fill="url(#goldGrad)"/>
+      <text x="113" y="282" font-family="'Oswald', sans-serif" font-size="18" font-weight="700" fill="#0f172a" text-anchor="middle">10</text>
+    </g>
+  </g>
+
+  <!-- Product Tag Badge -->
+  <g transform="translate(300, 535)">
+    <rect x="-195" y="-18" width="390" height="36" rx="18" fill="#0f172a" stroke="url(#goldGrad)" stroke-width="2"/>
+    <text x="0" y="6" font-family="'Montserrat', sans-serif" font-size="13" font-weight="800" fill="#fbbf24" text-anchor="middle" letter-spacing="1">GUANTES DE ARQUERO GRIP PRO 4MM</text>
+  </g>
+</svg>
+
